@@ -19,6 +19,6 @@ The framework is designed as a **research artifact**, intended to complement pap
 
 ## 📦 Installation
 ```bash
-git clone https://github.com/<your-username>/cross-backend-model-checker.git
+git clone https://github.com/william-zehua-li/cross-backend-model-checker.git
 cd cross-backend-model-checker
 pip install -r requirements.txt
