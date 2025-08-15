@@ -1,0 +1,19 @@
+store yaml here
+
+sample yaml:
+
+from: library
+model: resnet50
+inputs:
+  - assets/cat.jpg
+  - assets/dog.jpg
+  - assets/bird.jpg
+  - assets/car.jpg
+  - assets/plane.jpg
+  - assets/ship.jpg
+means: [0.485, 0.456, 0.406]
+stds: [0.229, 0.224, 0.225]
+options:
+  resize_multiple: 32
+verification:
+  tol: {atol: 1e-5, rtol: 1e-5}
