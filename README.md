@@ -5,6 +5,7 @@ It supports **CPU**, **GPU**, and **torch.compile** pipelines, with configurable
 
 The framework is designed as a **research artifact**, intended to complement papers on **model reproducibility, backend consistency, and operator coverage**.
 
+Preprint available at [link] (under submission to arXiv)
 ---
 
 ## ✨ Features

@@ -6,6 +6,8 @@ def tensors_allclose(t1, t2, atol=1e-5, rtol=1e-5):
         return False, {"reason": "shape_mismatch", "shape1": t1.shape, "shape2": t2.shape}
     if not torch.isfinite(t1).all() or not torch.isfinite(t2).all():
         return False, {"reason": "non_finite_values"}
+    t1=t1.cpu()
+    t2=t2.cpu()
     diff = torch.abs(t1 - t2)
     max_err = diff.max().item()
     passed = torch.allclose(t1, t2, atol=atol, rtol=rtol)
